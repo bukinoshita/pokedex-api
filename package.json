@@ -1,0 +1,33 @@
+{
+  "name": "pokedex-api",
+  "version": "0.0.0",
+  "description": "Pokedex API",
+  "main": "index.js",
+  "repository": "https://github.com/bukinoshita/pokedex-api.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2"
+  },
+  "scripts": {
+    "start": "node server",
+    "test": "xo"
+  },
+  "devDependencies": {
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false,
+    "esnext": true,
+    "rules": {
+      "object-curly-spacing": 0
+    }
+  },
+  "now": {
+    "alias": "pokedex-api"
+  }
+}

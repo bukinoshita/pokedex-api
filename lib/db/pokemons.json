@@ -1,0 +1,36 @@
+[
+  {
+    "pokedexNumber": "001",
+    "name": "Bulbasaur",
+    "type": ["grass", "poison"],
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
+    "catchRate": 45,
+    "color": "green",
+    "hp": 45,
+    "attack": 49,
+    "defense": 49,
+    "speedAttack": 65,
+    "speedDefense": 65,
+    "speed": 45
+  },
+  {
+    "pokedexNumber": "002",
+    "name": "Ivysaur",
+    "type": ["grass", "poison"],
+    "genderRatio": {
+      "male": 87.5,
+      "female": 12.5
+    },
+    "catchRate": 45,
+    "color": "green",
+    "hp": 45,
+    "attack": 49,
+    "defense": 49,
+    "speedAttack": 65,
+    "speedDefense": 65,
+    "speed": 45
+  }
+]
