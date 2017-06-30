@@ -14,7 +14,8 @@
     "defense": 49,
     "speedAttack": 65,
     "speedDefense": 65,
-    "speed": 45
+    "speed": 45,
+    "fleeRate": 10
   },
   {
     "pokedexNumber": "002",
@@ -31,6 +32,7 @@
     "defense": 49,
     "speedAttack": 65,
     "speedDefense": 65,
-    "speed": 45
+    "speed": 45,
+    "fleeRate": 7
   }
 ]
