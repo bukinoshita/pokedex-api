@@ -6,10 +6,21 @@
   "repository": "https://github.com/bukinoshita/pokedex-api.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon server"
+  },
   "dependencies": {
+    "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "cors": "^2.8.3",
+    "crypto": "^0.0.3",
     "express": "^4.15.3",
+    "express-validator": "^3.2.0",
+    "jsonwebtoken": "^7.4.1",
+    "mailgun-js": "^0.11.2",
+    "moment": "^2.18.1",
+    "mongo-sanitize": "^1.0.0",
+    "mongoose": "^4.11.1",
     "morgan": "^1.8.2"
   },
   "scripts": {
@@ -24,7 +35,8 @@
     "semicolon": false,
     "esnext": true,
     "rules": {
-      "object-curly-spacing": 0
+      "object-curly-spacing": 0,
+      "no-use-extend-native/no-use-extend-native": 0
     }
   },
   "now": {
