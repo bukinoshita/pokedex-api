@@ -7,7 +7,9 @@
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon server"
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server",
+    "test": "xo"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
@@ -22,10 +24,6 @@
     "mongo-sanitize": "^1.0.0",
     "mongoose": "^4.11.1",
     "morgan": "^1.8.2"
-  },
-  "scripts": {
-    "start": "node server",
-    "test": "xo"
   },
   "devDependencies": {
     "xo": "^0.18.2"
