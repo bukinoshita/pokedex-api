@@ -26,14 +26,12 @@
     "morgan": "^1.8.2"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^2.3.0",
     "xo": "^0.18.2"
   },
   "xo": {
-    "space": true,
-    "semicolon": false,
-    "esnext": true,
+    "extends": ["prettier"],
     "rules": {
-      "object-curly-spacing": 0,
       "no-use-extend-native/no-use-extend-native": 0
     }
   },
