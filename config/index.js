@@ -5,9 +5,9 @@ module.exports = {
     tokenSecret: 'awesome-pokedex',
     db: 'mongodb://localhost/pokedex-api',
     mailgun: {
-      apiKey: POKEDEX_MAILGUN_APIKEY,
-      from: 'bukinoshita@gmail.com',
-      domain: 'pokedex-api.now.sh'
+      apiKey: process.env.MAILGUN_APIKEY,
+      from: process.env.MAILGUN_FROM,
+      domain: process.env.MAILGUN_DOMAIN
     }
   },
   staging: {
@@ -15,9 +15,9 @@ module.exports = {
     tokenSecret: 'awesome-pokedex',
     db: 'mongodb://localhost/pokedex-api',
     mailgun: {
-      apiKey: POKEDEX_MAILGUN_APIKEY,
-      from: 'bukinoshita@gmail.com',
-      domain: 'pokedex-api.now.sh'
+      apiKey: process.env.MAILGUN_APIKEY,
+      from: process.env.MAILGUN_FROM,
+      domain: process.env.MAILGUN_DOMAIN
     }
   },
   production: {
@@ -26,9 +26,9 @@ module.exports = {
     tokenSecret: 'awesome-pokedex',
     db: 'mongodb://localhost/pokedex-api',
     mailgun: {
-      apiKey: POKEDEX_MAILGUN_APIKEY,
-      from: 'bukinoshita@gmail.com',
-      domain: 'pokedex-api.now.sh'
+      apiKey: process.env.MAILGUN_APIKEY,
+      from: process.env.MAILGUN_FROM,
+      domain: process.env.MAILGUN_DOMAIN
     }
   }
 }
