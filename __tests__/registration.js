@@ -7,7 +7,7 @@ const server = require('./../server')
 const resetDb = require('./../lib/helpers/reset-db')
 const TokenModel = require('./../lib/models/token')
 
-describe('login process', () => {
+describe('registration', () => {
   before(done => {
     resetDb().then(done).catch(done)
   })
