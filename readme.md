@@ -1,4 +1,4 @@
-# pokedex-api [![Build Status](https://travis-ci.org/bukinoshita/pokedex-api.svg?branch=master)](https://travis-ci.org/bukinoshita/pokedex-api)
+# pokedex-api [![CircleCI](https://circleci.com/gh/bukinoshita/pokedex-api/tree/master.svg?style=svg)](https://circleci.com/gh/bukinoshita/pokedex-api/tree/master)
 
 > Pokedex API
 
