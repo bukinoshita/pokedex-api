@@ -1021,6 +1021,10 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
+get-pokeball@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/get-pokeball/-/get-pokeball-0.0.1.tgz#70f90decf0d436825a6abe152dc8962ecf6f822c"
+
 get-set-props@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/get-set-props/-/get-set-props-0.1.0.tgz#998475c178445686d0b32246da5df8dbcfbe8ea3"
