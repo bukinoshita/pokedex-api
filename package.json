@@ -9,7 +9,7 @@
   "scripts": {
     "start": "NODE_ENV=production node server",
     "dev": "nodemon server",
-    "test": "xo"
+    "test": "xo && NODE_ENV=test mocha __tests__ --timeout=16000"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
@@ -27,13 +27,16 @@
   },
   "devDependencies": {
     "eslint-config-prettier": "^2.3.0",
+    "mocha": "^3.4.2",
+    "supertest": "^3.0.0",
     "xo": "^0.18.2"
   },
   "xo": {
     "extends": ["prettier"],
     "rules": {
       "no-use-extend-native/no-use-extend-native": 0
-    }
+    },
+    "globals": ["it", "describe", "before"]
   },
   "now": {
     "name": "pokedex-api",

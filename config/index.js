@@ -10,21 +10,21 @@ module.exports = {
       domain: process.env.MAILGUN_DOMAIN
     }
   },
-  staging: {
+  test: {
     port: 3001,
-    host: 'https://pokedex-api-staging.now.sh',
+    host: 'http://localhost',
     tokenSecret: 'awesome-pokedex',
-    db: 'mongodb://localhost/pokedex-api',
+    db: 'mongodb://localhost/pokedex-api-test',
     mailgun: {
-      apiKey: process.env.MAILGUN_APIKEY,
-      from: process.env.MAILGUN_FROM,
-      domain: process.env.MAILGUN_DOMAIN
+      apiKey: 'test',
+      from: 'test',
+      domain: 'test'
     }
   },
   production: {
     port: 3001,
     host: 'https://pokedex-api.now.sh',
-    tokenSecret: 'awesome-pokedex',
+    tokenSecret: process.env.TOKEN_SECRET,
     db: `mongodb://${process.env.DB_USER}:${process.env
       .DB_PASSWORD}@ds151702.mlab.com:51702/pokedex-api`,
     mailgun: {
