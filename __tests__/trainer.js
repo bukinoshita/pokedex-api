@@ -181,7 +181,7 @@ describe('trainer', () => {
 
   it('should update trainer when capture a pokemon', done => {
     const data = {
-      pokemonId: '5963c5ac38f6f1e52aa68fe2',
+      pokemonId: '596520dbba1cbd27a5071872',
       type: 'pokeball',
       capture: true
     }

@@ -11,7 +11,7 @@ module.exports = {
     }
   },
   test: {
-    port: 3001,
+    port: 3002,
     host: 'http://localhost',
     tokenSecret: 'awesome-pokedex',
     db: 'mongodb://localhost/pokedex-api-test',
