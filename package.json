@@ -33,20 +33,22 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "extends": [
-      "prettier"
-    ],
+    "extends": ["prettier"],
     "rules": {
       "no-use-extend-native/no-use-extend-native": 0
     },
-    "globals": [
-      "it",
-      "describe",
-      "before"
-    ]
+    "globals": ["it", "describe", "before"]
   },
   "now": {
     "name": "pokedex-api",
-    "alias": "pokedex-api"
+    "alias": "pokedex-api",
+    "env": {
+      "TOKEN_SECRET": "@pokedex-secret",
+      "DB_USER": "@pokedex-db-user",
+      "DB_PASSWORD": "@pokedex-db-password",
+      "MAILGUN_APIKEY": "@pokedex-mailgun-apikey",
+      "MAILGUN_FROM": "@pokedex-mailgun-from",
+      "MAILGUN_DOMAIN": "@pokedex-mailgun-domain"
+    }
   }
 }
