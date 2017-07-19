@@ -31,7 +31,7 @@ describe('registration', () => {
         assert.ok(res.body.user)
         assert.equal(res.body.user.bag.length, 4)
         assert.equal(res.body.user.pokemons.length, 0)
-        assert.equal(res.body.user.balance, 1000)
+        assert.equal(res.body.user.balance, 5000)
         assert.equal(res.body.user.emailConfirmed, false)
         assert.equal(res.body.user.email, data.email)
 

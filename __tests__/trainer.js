@@ -32,7 +32,7 @@ describe('trainer', () => {
         assert.equal(res.body.user.bag.length, 4)
         assert.equal(res.body.user.pokemons.length, 0)
         assert.equal(res.body.user.pokedex, 0)
-        assert.equal(res.body.user.balance, 1000)
+        assert.equal(res.body.user.balance, 5000)
         assert.equal(res.body.user.emailConfirmed, false)
         assert.equal(res.body.user.email, data.email)
 
@@ -129,7 +129,7 @@ describe('trainer', () => {
         assert.equal(res.body.bag.length, 4)
         assert.equal(res.body.pokemons.length, 0)
         assert.equal(res.body.pokedex, 0)
-        assert.equal(res.body.balance, 1000)
+        assert.equal(res.body.balance, 5000)
         assert.equal(res.body.emailConfirmed, true)
 
         done()
@@ -137,7 +137,7 @@ describe('trainer', () => {
   })
 
   it('should update trainer name', done => {
-    const data = { name: 'bu' }
+    const data = { name: 'Bu' }
     request(server)
       .put('/trainer')
       .set('Authorization', token)
@@ -152,9 +152,9 @@ describe('trainer', () => {
         assert.equal(res.body.user.bag.length, 4)
         assert.equal(res.body.user.pokemons.length, 0)
         assert.equal(res.body.user.pokedex, 0)
-        assert.equal(res.body.user.balance, 1000)
+        assert.equal(res.body.user.balance, 5000)
         assert.equal(res.body.user.emailConfirmed, true)
-        assert.equal(res.body.user.name, data.name)
+        assert.equal(res.body.user.name, data.name.toLowerCase())
 
         done()
       })
@@ -176,7 +176,7 @@ describe('trainer', () => {
         assert.equal(res.body.user.bag.length, 4)
         assert.equal(res.body.user.pokemons.length, 1)
         assert.equal(res.body.user.pokedex, 1)
-        assert.equal(res.body.user.balance, 1000)
+        assert.equal(res.body.user.balance, 5000)
         assert.equal(res.body.user.emailConfirmed, true)
 
         done()
@@ -199,7 +199,7 @@ describe('trainer', () => {
         assert.equal(res.body.user.bag.length, 4)
         assert.equal(res.body.user.pokemons.length, 1)
         assert.equal(res.body.user.pokedex, 1)
-        assert.equal(res.body.user.balance, 1000)
+        assert.equal(res.body.user.balance, 5000)
         assert.equal(res.body.user.emailConfirmed, true)
 
         done()
@@ -226,7 +226,7 @@ describe('trainer', () => {
         assert.equal(res.body.user.bag.length, 4)
         assert.equal(res.body.user.pokemons.length, 2)
         assert.equal(res.body.user.pokedex, 2)
-        assert.equal(res.body.user.balance, 1000)
+        assert.equal(res.body.user.balance, 5000)
         assert.equal(res.body.user.emailConfirmed, true)
         assert.equal(res.body.user.bag[0].quantity, 9)
 
@@ -251,7 +251,7 @@ describe('trainer', () => {
 
         assert.equal(res.body.message, 'Profile information updated.')
         assert.equal(res.body.user.bag.length, 4)
-        assert.equal(res.body.user.balance, 1100)
+        assert.equal(res.body.user.balance, 5100)
         assert.equal(res.body.user.emailConfirmed, true)
         assert.equal(res.body.user.bag[0].quantity, 8)
 
@@ -276,7 +276,7 @@ describe('trainer', () => {
 
         assert.equal(res.body.message, 'Profile information updated.')
         assert.equal(res.body.user.bag.length, 4)
-        assert.equal(res.body.user.balance, 900)
+        assert.equal(res.body.user.balance, 4900)
         assert.equal(res.body.user.emailConfirmed, true)
         assert.equal(res.body.user.bag[0].quantity, 9)
 
