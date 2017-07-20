@@ -9,7 +9,7 @@
   "scripts": {
     "start": "NODE_ENV=production node server",
     "dev": "nodemon server",
-    "test": "NODE_ENV=test mocha __tests__ --timeout=16000"
+    "test": "xo && NODE_ENV=test mocha __tests__ --timeout=16000"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
@@ -35,7 +35,8 @@
   "xo": {
     "extends": ["prettier"],
     "rules": {
-      "no-use-extend-native/no-use-extend-native": 0
+      "no-use-extend-native/no-use-extend-native": 0,
+      "prefer-promise-reject-errors": 0
     },
     "globals": ["it", "describe", "before"]
   },
