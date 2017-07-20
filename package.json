@@ -36,7 +36,8 @@
     "extends": ["prettier"],
     "rules": {
       "no-use-extend-native/no-use-extend-native": 0,
-      "prefer-promise-reject-errors": 0
+      "prefer-promise-reject-errors": 0,
+      "radix": 0
     },
     "globals": ["it", "describe", "before"]
   },
