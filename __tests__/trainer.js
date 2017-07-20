@@ -283,4 +283,30 @@ describe('trainer', () => {
         done()
       })
   })
+
+  it('should update trainer when buy more than one pokeball', done => {
+    const data = {
+      type: 'pokeball',
+      buy: true,
+      quantity: 5
+    }
+    request(server)
+      .put('/trainer')
+      .set('Authorization', token)
+      .send(data)
+      .end((err, res) => {
+        if (err) {
+          console.error(res.error)
+          return done(err)
+        }
+
+        assert.equal(res.body.message, 'Profile information updated.')
+        assert.equal(res.body.user.bag.length, 4)
+        assert.equal(res.body.user.balance, 3900)
+        assert.equal(res.body.user.emailConfirmed, true)
+        assert.equal(res.body.user.bag[0].quantity, 14)
+
+        done()
+      })
+  })
 })
