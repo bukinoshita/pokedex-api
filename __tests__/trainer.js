@@ -259,6 +259,27 @@ describe('trainer', () => {
       })
   })
 
+  it('should return an error when tries to use pokeball when you dont have one', done => {
+    const data = {
+      type: 'pokeball',
+      sell: true,
+      quantity: 1000
+    }
+    request(server)
+      .put('/trainer')
+      .set('Authorization', token)
+      .send(data)
+      .end((err, res) => {
+        if (err) {
+          console.error(res.error)
+          return done(err)
+        }
+
+        assert.equal(res.body.error.message, "You don't have enough Pokéballs")
+        done()
+      })
+  })
+
   it('should update trainer when buy a pokeball', done => {
     const data = {
       type: 'pokeball',
