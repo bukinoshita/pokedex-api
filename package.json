@@ -1,6 +1,6 @@
 {
   "name": "pokedex-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pokedex API",
   "main": "index.js",
   "repository": "https://github.com/bukinoshita/pokedex-api.git",
