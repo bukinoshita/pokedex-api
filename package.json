@@ -27,7 +27,7 @@
     "morgan": "^1.8.2"
   },
   "devDependencies": {
-    "eslint-config-prettier": "2.3.0",
+    "eslint-config-prettier": "2.10.0",
     "mocha": "3.4.2",
     "supertest": "3.0.0",
     "xo": "0.18.2"
