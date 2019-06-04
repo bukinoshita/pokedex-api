@@ -30,7 +30,7 @@
     "eslint-config-prettier": "4.3.0",
     "mocha": "6.1.4",
     "supertest": "3.4.2",
-    "xo": "0.18.2"
+    "xo": "0.24.0"
   },
   "xo": {
     "extends": ["prettier"],
