@@ -19,7 +19,7 @@
     "express": "^4.15.3",
     "express-validator": "^6.0.0",
     "get-pokeball": "^0.0.2",
-    "jsonwebtoken": "^8.0.0",
+    "jsonwebtoken": "^9.0.0",
     "mailgun-js": "^0.22.0",
     "moment": "^2.18.1",
     "mongo-sanitize": "^1.0.0",
